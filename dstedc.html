@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script type="text/javascript" async src="fonts-min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <meta name="description" content="We present a memory-efficient
+    implementation of divide-and-conquer eigenvalue algorithm. It features
+    automatic profiling that dynamicallly partitions work according to machine
+    configuration." />
+    <title>
+    A memory-efficient algorithm for large-scale symmetric tridiagonal
+    eigenvalue problem on multi-GPU systems
+    </title>
+</head>
+<body>
+    <div id="container" itemscope
+    itemtype="http://www.schema.org/ScholarlyArticle">
+        <p>[<a href=".">&larr; Go back to profile</a>]</p>
+        <h1 itemprop="name">
+        A memory-efficient algorithm for large-scale symmetric tridiagonal
+        eigenvalue problem on multi-GPU systems
+        </h1>
+        <p>
+with
+<a href="http://turing.cs.trincoll.edu/~pyoon/">Peter Yoon</a>
+        </p>
+        <p>
+Paper presented at 
+<a href="http://worldacademyofscience.org/worldcomp14/ws/conferences/pdpta14">
+WorldComp 2014: PDPTA</a> (2014)<br>
+Poster presented at the
+<a href="http://www.gputechconf.com/page/home.html">
+GPU Technology Conference</a> (2014)
+        </p>
+        <h2>Download</h2>
+        <ul>
+            <li>Code: <a href="https://github.com/hcho3/dstedc_mgpu">
+                https://github.com/hcho3/dstedc_mgpu</a></li>
+            <li>GTC poster: [<a href="posters/dstedc_gtc.pdf">PDF</a>]</li>
+            <li>WorldComp PDPTA talk:
+            [<a href="talks/dstedc_talk.pptx">PPTX</a>]
+            [<a href="talks/dstedc_talk.pdf">PDF</a>]
+            </li>
+            <li>WorldComp PDPTA paper:
+            [<a href="preprints/dstedc_worldcomp.pdf">Paper</a>]</li>
+        </ul>
+        <h2>Synopsis</h2>
+        <p itemprop="description">
+        <strong>Divide-and-conquer algorithm</strong> is a numerically stable
+        and efficient algorithm that computes the eigenvalues and eigenvectors
+        of a symmetric tridiagonal matrix. We often face the situation where
+        the input matrix fits into the main memory but not into the on-chip
+        memory of a GPU device. We present an <strong>out-of-core
+        implementation</strong> where only part of the input matrix is
+        resident in GPU memory at any point in time. It works independently of
+        the physical size of GPU memory, handling any size of input as long as
+        it fits into the main memory. Work is dynamically allocated to
+        multiple GPUs and CPU cores, taking account of available workspaces
+        and progress of the algorithm. In addition, it delivers a performance
+        comparable to that of conventional multi-GPU implementations for cases
+        where workspaces fit into the GPU memory.
+        </p>
+        <h2>Publication Details</h2>
+        <ul>
+            <li>
+            Conference Paper:<br>
+            Hyunsu Cho and Peter Yoon. &ldquo;A Memory-Efficient Algorithm for
+            Large-Scale Symmetric Tridiagonal Eigenvalue Problem on Multi-GPU
+            Systems,&rdquo; <em>Proceedings of the 2014 International
+            Conference on Parallel and Distributed Processing Techniques
+            and Applications</em>, pp. 568-573, Las Vegas, NV, July 24, 2014.
+            </li>
+            <li>
+            Poster:<br>
+            Hyunsu Cho and Peter Yoon. &ldquo;Symmetric Tridiagonal Eigenvalue
+            Problem on Multi-GPU Systems,&rdquo;
+            <em>The GPU Technology Conference 2014</em>, San Jose, CA,
+            March 24, 2014.
+            </li>
+        </ul>
+        <p>[<a href=".">&larr; Go back to profile</a>]</p>
+    </div>
+</body>
+</html>

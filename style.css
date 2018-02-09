@@ -1,0 +1,116 @@
+div#container {
+    width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    border: 2px solid black;
+    background: white;
+    padding: 40px 50px 50px 50px;
+}
+div#my_name {
+    float: left;
+}
+div#my_contact {
+    float: right;
+}
+body {
+    background: #eee;
+    font-size: 100%;
+}
+h1 {
+    font-family: 'Open Sans', Segoe UI, freesans, sans-serif;
+    font-size: 160%;
+    font-weight: normal;
+}
+h1#name {
+    font-size: 210%;
+}
+h2 {
+    font-family: 'Open Sans', Segoe UI, freesans, sans-serif;
+    font-size: 150%;
+    font-weight: normal;
+    margin-top: 4px;
+    margin-bottom: 4px;
+} 
+h3 {
+    font-family: 'Open Sans', Segoe UI, freesans, sans-serif;
+    font-size: 136%;
+    font-weight: normal;
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+li {
+    font-family: 'Open Sans', Segoe UI, freesans, sans-serif;
+    margin-bottom: 8px;
+}
+#awards-list li, #awards-list li span {
+    margin-bottom: 0px;
+}
+#nav ul, #nav li {
+    display: inline;
+    padding: 0;
+    font-weight: bold;
+}
+p {
+    font-family: 'Open Sans', Segoe UI, freesans, sans-serif;
+    font-weight: normal;
+}
+hr {
+    border-width: 0;
+    color: black;
+    background-color: black;
+    height: 1.5pt;
+}
+code {
+    font-family: monospace;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+div.clearboth {
+    clear: both;
+    padding: 0;
+    margin: 0;
+    height: 0;
+}
+div.vspace {
+    height: 10px;
+    margin: 0;
+    padding: 0;
+}
+div#profile-pic {
+    float: right;
+    margin-left: 10px;
+}
+
+@media (max-width:760px) {
+    body {
+        background: white;
+    }
+    div#container {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background: white;
+        padding: 0 0 0 0;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    div#my_name {
+        float: none;
+    }
+    div#my_contact {
+        float: none;
+    }
+    div#profile-pic {
+        float: none;
+        margin-left: 0px;
+    }
+}

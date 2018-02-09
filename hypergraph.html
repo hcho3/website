@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script type="text/javascript" async src="fonts-min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <meta name="description" content="One of the obstacles in accelerating sparse
+    graph applications using GPUs is load imbalance, which in certain cases causes
+    threads to stall. We investigate a specific application known as hypergraph
+    coarsening and explore a technique for addressing load imbalance." />
+    <title>
+    An accelerated procedure for hypergraph coarsening on the GPU
+    </title>
+</head>
+<body>
+    <div id="container" itemscope
+    itemtype="http://www.schema.org/ScholarlyArticle">
+        <p>[<a href=".">&larr; Go back to profile</a>]</p>
+        <h1 itemprop="name">
+        An accelerated procedure for hypergraph coarsening on the GPU
+        </h1>
+        <p>
+with
+<a href="http://internet2.trincoll.edu/facProfiles/Default.aspx?fid=1335119">
+Lin Cheng</a> and
+<a href="http://turing.cs.trincoll.edu/~pyoon/">Peter Yoon</a>
+        </p>
+        <p>
+Paper presented at 
+<a href="http://www.ieee-hpec.org/2015/">IEEE HPEC</a> (2015)
+        </p>
+        <h2>Download</h2>
+        <ul>
+            <li>IEEE HPEC talk:
+            [<a href="talks/hypergraph_talk.pptx">PPTX</a>]
+            [<a href="talks/hypergraph_talk.pdf">PDF</a>]
+            </li>
+            <li>IEEE HPEC paper:
+            [<a href="preprints/hypergraph_hpec.pdf">Paper</a>]</li>
+        </ul>
+        <h2>Synopsis</h2>
+        <p itemprop="description">
+        One of the obstacles in accelerating sparse graph
+        applications using GPUs is load imbalance, which in certain
+        cases causes threads to stall. We investigate a specific application
+        known as <strong>hypergraph coarsening</strong> and explore a technique for
+        addressing load imbalance. The hypergraph is a generalization
+        of the graph where one edge may connect more than two nodes.
+        Many problems of interest may be expressed in terms of optimal
+        partitioning of hypergraphs where the edge cut is minimized.
+        The most costly step in hypergraph partitioning is hypergraph
+        coarsening, the process of grouping nodes with similar connectivity
+        patterns into one node to yield a new hypergraph with
+        fewer nodes. Hypergraph coarsening proves to be computationally
+        challenging on GPUs because many hypergraphs exhibit an
+        irregular distribution of connections. To address the resulting
+        load imbalance, we explore a novel task allocation scheme to
+        distribute work more evenly among GPU threads.
+        </p>
+        <h2>Publication Details</h2>
+        <ul>
+            <li>
+            Conference Paper:<br>
+            Lin Cheng, Hyunsu Cho, and Peter Yoon. &ldquo;An Accelerated Procedure
+            for Hypergraph Coarsening on the GPU,&rdquo; <em>IEEE High Performance
+            Extreme Computing Conference</em>, Waltham, MA, September 16, 2015.
+            </li>
+        </ul>
+        <p>[<a href=".">&larr; Go back to profile</a>]</p>
+    </div>
+</body>
+</html>
