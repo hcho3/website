@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script type="text/javascript" async src="fonts-min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <meta name="description" content="One of the obstacles in accelerating sparse
+    graph applications using GPUs is load imbalance, which in certain cases causes
+    threads to stall. We investigate a specific application known as hypergraph
+    coarsening and explore a technique for addressing load imbalance." />
+    <title>
+    Treelite: toolbox for decision tree deployment 
+    </title>
+</head>
+<body>
+    <div id="container" itemscope
+    itemtype="http://www.schema.org/ScholarlyArticle">
+        <p>[<a href=".">&larr; Go back to profile</a>]</p>
+        <h1 itemprop="name">
+        Treelite: toolbox for decision tree deployment 
+        </h1>
+        <p>
+with
+<a href="https://github.com/mli">Mu Li</a>
+        </p>
+        <p>
+Poster presented at
+<a href="http://www.sysml.cc">SysML 2018</a> (2018)
+        </p>
+        <h2>Download</h2>
+        <ul>
+            <li>SysML poster:
+            [<a href="posters/treelite_sysml.pdf">PDF</a>]
+            </li>
+            <li>SysML extended abstract:
+            [<a href="preprints/treelite_sysml.pdf">Extended abstract</a>]</li>
+        </ul>
+        <h2>Synopsis</h2>
+        <p itemprop="description">
+        This paper introduces a brand new tree library
+        <a href="https://github.com/dmlc/treelite"><strong>treelite</strong></a>.
+        The library is a toolbox to facilitate easy
+        deployment of models and accelerate prediction performance. It has a
+        Python wrapper that allows users to integrate it as part of their
+        workflow. Treelite is able to read tree ensemble models that are
+        trained by any tree libraries, including
+        <a href="https://github.com/dmlc/xgboost">XGBoost</a>,
+        <a href="https://github.com/microsoft/lightgbm">LightGBM</a>, and
+        <a href="https://github.com/scikit-learn/scikit-learn">scikit-learn</a>.
+        Treelite is also designed to minimize dependencies at the time of
+        deployment. It used to be the case that one had to ship his tree model
+        with the original tree library that trained it; with treelite, it is
+        no longer.  Finally, treelite allows for optimizations that improve
+        prediction performance without changing any detail of the model.
+        </p>
+        <h2>Publication Details</h2>
+        <ul>
+            <li>
+            Extended Abstract and Poster:<br>
+            Hyunsu Cho and Mu Li. &ldquo;Treelite: toolbox for decision tree
+            deployment,&rdquo; <em>SysML 2018</em>, Stanford, CA, February 16, 2018.
+            </li>
+        </ul>
+        <p>[<a href=".">&larr; Go back to profile</a>]</p>
+    </div>
+</body>
+</html>
