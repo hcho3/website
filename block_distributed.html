@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script type="text/javascript" async src="fonts-min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <meta name="description" content="One of the obstacles in accelerating sparse
+    graph applications using GPUs is load imbalance, which in certain cases causes
+    threads to stall. We investigate a specific application known as hypergraph
+    coarsening and explore a technique for addressing load imbalance." />
+    <title>
+    Treelite: toolbox for decision tree deployment 
+    </title>
+</head>
+<body>
+    <div id="container" itemscope
+    itemtype="http://www.schema.org/ScholarlyArticle">
+        <p>[<a href=".">&larr; Go back to profile</a>]</p>
+        <h1 itemprop="name">
+        Block-distributed Gradient Boosted Trees
+        </h1>
+        <p>
+with
+<a href="https://www.sics.se/people/theodore-vasiloudis">Theodore Vasiloudis</a> and
+<a href="https://www.kth.se/profile/henbos?l=en">Henrik Boström</a>
+        </p>
+        <p>
+Paper presented at
+<a href="https://sigir.org/sigir2019/">ACM SIGIR</a> (2019)
+        </p>
+        <h2>Download</h2>
+        <ul>
+            <li>Camera-ready version
+            [<a href="https://arxiv.org/abs/1904.10522">arXiv:1904.10522</a>]</li>
+        </ul>
+        <h2>Synopsis</h2>
+        <p itemprop="description">
+        The <strong>Gradient Boosted Tree (GBT) algorithm</strong> is one of
+        the most popular machine learning algorithms used in production, for
+        tasks that include Click-Through Rate (CTR) prediction and
+        learning-to-rank. To deal with the massive datasets available today,
+        many distributed GBT methods have been proposed. However, they all
+        assume a row-distributed dataset, addressing scalability only with
+        respect to the number of data points and not the number of features,
+        and increasing communication cost for high-dimensional data. In order
+        to allow for scalability across both the data point and feature
+        dimensions, and reduce communication cost, we propose
+        <strong>block-distributed GBTs</strong>. We achieve communication
+        efficiency by making full use of the data sparsity and adapting the
+        Quickscorer algorithm to the block-distributed setting. We evaluate our
+        approach using datasets with millions of features, and demonstrate that
+        we are able to achieve multiple orders of magnitude reduction in
+        communication cost for sparse data, with no loss in accuracy, while
+        providing a more scalable design. As a result, we are able to reduce
+        the training time for high-dimensional data, and allow more
+        cost-effective scale-out without the need for expensive network
+        communication.
+        </p>
+        <h2>Publication Details</h2>
+        <ul>
+            <li>
+            Conference Paper:<br>
+            Theodore Vasiloudis, Hyunsu Cho, and Henrik Boström.
+            &ldquo;Block-distributed Gradient Boosted Trees,&rdquo;
+            <em>ACM SIGIR 2019</em>, Paris, France, July 25, 2019.
+            </li>
+        </ul>
+        <p>[<a href=".">&larr; Go back to profile</a>]</p>
+    </div>
+</body>
+</html>
