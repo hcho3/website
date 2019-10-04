@@ -32,7 +32,7 @@ h2 {
     font-weight: normal;
     margin-top: 4px;
     margin-bottom: 4px;
-} 
+}
 h3 {
     font-family: 'Open Sans', Segoe UI, freesans, sans-serif;
     font-size: 136%;
@@ -85,6 +85,20 @@ div.vspace {
 div#profile-pic {
     float: right;
     margin-left: 10px;
+}
+
+ul.jump-bar {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+ul.jump-bar li {
+    display: inline;
+    font-weight: bold;
 }
 
 @media (max-width:760px) {
