@@ -13,6 +13,7 @@ div#my_name {
 }
 div#my_contact {
     float: right;
+    text-align: right;
 }
 body {
     background: #eee;
