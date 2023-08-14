@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script type="text/javascript" async src="fonts-min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <meta name="description" content="We implement loss functions for learning accelerated failure time
+    (AFT) models in XGBoost, a leading machine learning library for gradient boosting." />
+    <title>
+    Survival regression with accelerated failure time model in XGBoost
+    </title>
+</head>
+<body>
+    <div id="container" itemscope
+    itemtype="http://www.schema.org/ScholarlyArticle">
+        <p>[<a href=".">&larr; Go back to profile</a>]</p>
+        <h1 itemprop="name">
+        Survival regression with accelerated failure time model in XGBoost
+        </h1>
+        <p>
+with
+<a href="https://avinashbarnwal.github.io/">
+Avinash Barnwal</a> and
+<a href="https://tdhock.github.io/">Toby D. Hocking</a>
+        </p>
+        <p>
+Article published in
+<a href="https://www.tandfonline.com/journals/ucgs20">Journal of Computational and Graphical Statistics</a> (2022)
+        </p>
+        <h2>Download</h2>
+        <ul>
+            <li>Preprint
+                [<a href="https://arxiv.org/abs/2006.04920">arXiv:2006.04920</a>]</li>
+            <li>Taylor & Francis Online
+                [<a href="https://doi.org/10.1080/10618600.2022.2067548">doi:10.1080/10618600.2022.2067548</a>]
+            </li>
+        </ul>
+        <h2>Synopsis</h2>
+        <p itemprop="description">
+            Survival regression is used to estimate the relation between time-to-event and feature
+            variables, and is important in application domains such as medicine, marketing, risk
+            management and sales management. Nonlinear tree based machine learning algorithms
+            as implemented in libraries such as XGBoost, scikit-learn, LightGBM, and CatBoost
+            are often more accurate in practice than linear models. However, existing state-ofthe-art
+            implementations of tree-based models have offered limited support for survival
+            regression. In this work, we implement loss functions for learning accelerated failure time
+            (AFT) models in XGBoost, to increase the support for survival modeling for different
+            kinds of label censoring. We demonstrate with real and simulated experiments the
+            effectiveness of AFT in XGBoost with respect to a number of baselines, in two respects:
+            generalization performance and training speed. Furthermore, we take advantage of the
+            support for NVIDIA GPUs in XGBoost to achieve substantial speedup over multi-core
+            CPUs. To our knowledge, our work is the first implementation of AFT that utilizes
+            the processing power of NVIDIA GPUs. Starting from the 1.2.0 release, the XGBoost
+            package natively supports the AFT model. The addition of AFT in XGBoost has had
+            significant impact in the open source community, and a few statistics packages now
+            utilize the XGBoost AFT model.
+        </p>
+        <h2>Publication Details</h2>
+        <ul>
+            <li>
+            Journal article:<br>
+            Avinash Barnwal, Hyunsu Cho, and Toby Hocking. &ldquo;Survival Regression with
+            Accelerated Failure Time Model in XGBoost,&rdquo; <em>Journal of Computational
+            and Graphical Statistics</em>, 31:4, p. 1292-1302, May 24, 2022.
+            </li>
+        </ul>
+        <p>[<a href=".">&larr; Go back to profile</a>]</p>
+    </div>
+</body>
+</html>
